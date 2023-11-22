@@ -17,7 +17,7 @@ function Employee(name, age, jobTitle)
 Employee.prototype.__proto__=Person.prototype;
 Employee.prototype.jobGreet = function()
 	{
-		greet().call(this);
+		this.greet()
 		console.log(`my job title is ${this.jobTitle}`)
 	}
 // Do not change code below this line
