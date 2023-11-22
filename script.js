@@ -4,9 +4,10 @@ function Person(name, age) {
   this.age = age;
 }
 
-Person.prototype.greet = function () {
-  console.log(`Hello, my name is ${this.name}`);
-  console.log(`I am ${this.age} years old`);
+Person.prototype.greet = function () 
+{
+  console.log("Hello, my name is ${this.name}");
+  console.log("I am ${this.age} years old");
 };
 
 function Employee(name, age, jobTitle) {
